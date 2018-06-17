@@ -38,3 +38,9 @@ for(it=hashmap.begin();it!=hashmap.end();++it)
   cout << "first: " << it->first << " second: " << it->second << endl;
 }
 }
+bool grep::rabin_karp(string& text,string& pattern)
+{
+  cout << text << endl;
+  cout << pattern << endl;
+  return true;
+}
