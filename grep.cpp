@@ -76,7 +76,6 @@ else
           break;
         }
       }
-      cout << "pattern found" << endl;
       return true;
     }
   }
