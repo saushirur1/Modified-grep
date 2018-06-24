@@ -7,7 +7,7 @@ int main()
 grep g;
 g.add_entry("This is a letter.This is amazing.This is a letter.");
 g.print();
-string text="dabcdg";
+string text="dbcdg";
 string pattern="abc";
 bool temp=g.rabin_karp(text,pattern);
 cout << temp << endl;

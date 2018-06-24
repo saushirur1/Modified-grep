@@ -51,10 +51,7 @@ for(int i=0;i<pattern.length();i++)
 cout << p << endl;
 cout << t << endl;
 int h=1;
-for (int i = 0; i < pattern.length()-1; i++)
-{
-       h = (h*256)%101;
-}
+h=pow(256,pattern.length()-1);
 if(p==t)
 {
   return true;
@@ -71,7 +68,16 @@ else
     }
     if(t==p)
     {
-      cout << "true" << endl;
+      for(int j=0;j<pattern.length();j++)
+      {
+        if(text[i+j+1]!=pattern[j])
+        {
+          cout << "false" << endl;
+          break;
+        }
+      }
+      cout << "pattern found" << endl;
+      return true;
     }
   }
 }
